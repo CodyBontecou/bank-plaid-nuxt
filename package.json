@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db:migrate": "pgmg 'postgresql://localhost:5432/bank-plaid-nuxt' 'migrations/02-plaid-info.mjs'"
+  },
+  "dependencies": {
+    "@auth/core": "^0.29.0",
+    "@jcss/vue-plaid-link": "^1.1.2",
+    "@sidebase/nuxt-auth": "^0.7.1",
+    "@vueuse/core": "^10.9.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "next-auth": "4.22.5",
+    "nuxt": "^3.11.2",
+    "pgmg": "^0.0.11",
+    "plaid": "^22.0.1",
+    "postgres": "^3.4.4",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  }
+}
