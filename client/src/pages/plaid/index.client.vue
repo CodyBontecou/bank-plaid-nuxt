@@ -34,12 +34,11 @@ const onSuccess: PlaidLinkOnSuccess = async (publicToken, metadata) => {
   console.log('data: ', data)
 }
 
-const config = computed(() => {
-  const config: PlaidLinkOptions = {
+const config = computed<PlaidLinkOptions>(() => {
+  return {
     token: token.value,
     onSuccess,
   }
-  return config
 })
 
 const { open, ready } = usePlaidLink(config)
