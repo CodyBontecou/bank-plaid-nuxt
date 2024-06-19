@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
-import usePlaidLink from '~/client/src/composables/usePlaidLink'
+
 import type {
   PlaidLinkOnSuccess,
   PlaidLinkOptions,
-} from '~/client/src/composables/usePlaidLink/types'
+} from '@/composables/usePlaidLink/types'
+import usePlaidLink from '@/composables/usePlaidLink'
 
 interface CreateLinkTokenResponse {
   expiration: string

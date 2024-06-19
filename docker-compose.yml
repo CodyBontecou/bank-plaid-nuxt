@@ -29,7 +29,6 @@ services:
 
   client:
     build: ./client
-    image: plaidinc/pattern-client:1.0.7
     ports:
       - 3000:3000
     depends_on:
