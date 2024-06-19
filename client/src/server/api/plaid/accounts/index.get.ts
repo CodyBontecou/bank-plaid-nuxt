@@ -1,4 +1,4 @@
-import { Account } from '~/schema/accounts'
+import { Account } from '~/client/src/schema/accounts'
 import { plaidClient } from '~/server/plaid'
 import sql from '~/server/utils/db'
 

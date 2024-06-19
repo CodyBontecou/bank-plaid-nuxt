@@ -16,7 +16,7 @@
     "@sidebase/nuxt-auth": "^0.7.1",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
-    "next-auth": "4.22.5",
+    "next-auth": "^4.21.1",
     "nuxt": "^3.11.2",
     "pgmg": "^0.0.11",
     "plaid": "^22.0.1",
